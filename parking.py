@@ -23,7 +23,7 @@ class Parking:
         while platePay not in self.currentTicket:
             print("incorrect license plate try again or check spelling")
             platePay = input("what is your license plate number? ")
-        user_input = float(input("Plase enter amount you would like to pay for parking ticket "))
+        user_input = float(input("Please enter amount you would like to pay for parking ticket "))
         if user_input <= .50:
             self.currentTicket[platePay]["paid"] = True
             print("you have 15 minutes! ")
